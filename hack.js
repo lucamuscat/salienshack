@@ -12,7 +12,8 @@ CSpawnSection.prototype.Update = function( enemyManager )
 };
 
 //Hack 2: Instawin the game.
-const battleEnd=Date.now() + /*k_MatchLengthSec*/30* 1000;
+const durationSeconds=30;
+const battleEnd=Date.now() + /*k_MatchLengthSec*/durationSeconds* 1000;
 CBattleState.prototype.Update = function(delta)
 {
 	if ( this.m_bStarting )
