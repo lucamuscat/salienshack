@@ -81,7 +81,7 @@ CBattleState.prototype.Update = function(delta)
 	}
 };
 
-//Instakill enemies
+//Hack 3: Instakill enemies
 CEnemy.prototype.BuildSprite = function()
 {
 	this.m_nMaxHealth = this.m_typeData.base_health;
